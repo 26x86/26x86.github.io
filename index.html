@@ -7,10 +7,10 @@
   <meta name="description" content="Experimental UEFI boot tooling for macOS on x86. Public USB and EFI generators. macos_boot_verified remains false.">
   <meta property="og:title" content="NextCore — 26x86">
   <meta property="og:description" content="Public USB creator, EFI folder generator, and prebuilt picker. Not a verified macOS boot.">
-  <meta property="og:image" content="https://26x86.github.io/assets/nextcore-og.png">
+  <meta property="og:image" content="https://26x86.github.io/assets/og.png">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#131A24">
-  <link rel="icon" href="assets/nextcore-logo-mark.png" type="image/png">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,8 +19,8 @@
 
   <header class="top">
     <a class="brand" href="#top">
-      <img src="assets/mark.svg" width="36" height="36" alt="">
-      <span>NEXTCORE</span>
+      <img class="word dark" src="assets/lockup-compact-white.png" alt="NEXTCORE">
+      <img class="word light" src="assets/lockup-compact-ink.png" alt="">
     </a>
     <nav>
       <a href="#start">Start</a>
@@ -34,7 +34,7 @@
   <main id="top">
     <section class="hero">
       <div class="hero-visual">
-        <img src="assets/nextcore-hero-banner.png" alt="NextCore symbol and UEFI picker laboratory scene">
+        <img src="assets/hero.png" alt="NextCore symbol and wordmark on Core Ink">
         <div class="hero-veil"></div>
       </div>
       <div class="hero-copy">
@@ -60,27 +60,27 @@
       </header>
       <div class="grid3">
         <a class="card tilt" href="https://github.com/26x86/NextCore">
-          <img src="assets/nextcore-card-usb.png" alt="USB stick with NextCore mark">
+          <img src="assets/card-mark.png" alt="NextCore symbol">
           <div class="card-body">
-            <h3>USB creator</h3>
-            <p>Partition a stick, write the ESP, re-hash every file on the media.</p>
-            <span class="more">tools/make-usb.ps1</span>
+            <h3>Picker binary</h3>
+            <p>Prebuilt <code>BOOTX64.EFI</code> with apfs-jumpstart and console-control.</p>
+            <span class="more">v1.0.0 release</span>
           </div>
         </a>
         <a class="card tilt" href="https://github.com/26x86/NextCore">
-          <img src="assets/nextcore-card-picker.png" alt="NextCore boot picker interface">
+          <img src="assets/card-lockup.png" alt="NextCore horizontal lockup">
           <div class="card-body">
             <h3>EFI generator</h3>
             <p>Download official OpenCore, merge a profile, run ocvalidate, assemble EFI/.</p>
             <span class="more">tools/make_efi.py</span>
           </div>
         </a>
-        <a class="card tilt" href="https://github.com/26x86/NextCore/releases/tag/v1.0.0">
-          <img src="assets/nextcore-card-modules.png" alt="Layered firmware architecture">
+        <a class="card tilt" href="https://github.com/26x86/NextCore">
+          <img src="assets/card-nav.png" alt="NextCore dark navigation: Boot selected">
           <div class="card-body">
-            <h3>Picker binary</h3>
-            <p>Prebuilt <code>BOOTX64.EFI</code> with apfs-jumpstart and console-control.</p>
-            <span class="more">v1.0.0 release</span>
+            <h3>USB creator</h3>
+            <p>Partition a stick, write the ESP, re-hash every file on the media.</p>
+            <span class="more">tools/make-usb.ps1</span>
           </div>
         </a>
       </div>
@@ -135,8 +135,8 @@
     </section>
 
     <section class="identity">
-      <img class="board" src="assets/nextcore-brand-board.png" alt="NextCore brand board: symbol, wordmark, and dark navigation">
-      <p>Core Pink <code>#F41469</code> · Core Ink <code>#131A24</code> · Paper <code>#F6F7F9</code></p>
+      <img class="board" src="assets/nextcore-brand-board.png" alt="Official NextCore brand board">
+      <p>Processed from NextCore-Brand-Kit · Core Pink <code>#F41469</code> · Core Ink <code>#131A24</code></p>
     </section>
   </main>
 
