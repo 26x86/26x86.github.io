@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "source_repository": "https://github.com/26x86/26x86.git",
+  "source_commit": "3d3a434dfc9f84dcc1c34a2257f8cf7ceaafd99c",
+  "source_role": "private-assembly",
+  "public_sources": {
+    "nextcore-apls": {
+      "repository": "https://github.com/26x86/Nextcore-APLS.git",
+      "revision": "9b6ccaa421f668fdb212ccd14969002f6196a18f",
+      "path": "nextcore/crates/nextcore-apls"
+    },
+    "nextcore-core": {
+      "repository": "https://github.com/26x86/Nextcore-Core.git",
+      "revision": "4ae6e9aff31be93cf570b56975b711902f3fb7e7",
+      "path": "nextcore/crates/nextcore-core"
+    },
+    "nextcore-efi": {
+      "repository": "https://github.com/26x86/Nextcore-EFI.git",
+      "revision": "df2c15b8c83664042c33daa274f550158308a752",
+      "path": "nextcore/crates/nextcore-efi"
+    },
+    "nextcore-gpu": {
+      "repository": "https://github.com/26x86/Nextcore-GPU.git",
+      "revision": "eaab9fcfded3a8ee298453397790f13edace5694",
+      "path": "nextcore/crates/nextcore-gpu"
+    },
+    "nextcore-hal": {
+      "repository": "https://github.com/26x86/Nextcore-HAL.git",
+      "revision": "9c1cd8dfff33478e32668c5cd181dd094ec2881b",
+      "path": "nextcore/crates/nextcore-hal"
+    },
+    "nextcore-ise": {
+      "repository": "https://github.com/26x86/Nextcore-ISE.git",
+      "revision": "778473fd9c43d7ba3a4721852f838be996fed45d",
+      "path": "nextcore/crates/nextcore-ise"
+    },
+    "nextcore-tool": {
+      "repository": "https://github.com/26x86/Nextcore-Tool.git",
+      "revision": "9e6222a69d2f62490139c477d6e217a28e3af323",
+      "path": "nextcore/crates/nextcore-tool"
+    }
+  },
+  "primary_efi_source": {
+    "module": "nextcore-efi",
+    "repository": "https://github.com/26x86/Nextcore-EFI.git",
+    "revision": "df2c15b8c83664042c33daa274f550158308a752",
+    "path": "nextcore/crates/nextcore-efi"
+  },
+  "target": "x86_64-unknown-uefi",
+  "rust_toolchain": "1.97.1",
+  "diagnostic_features": [
+    "arm-jit-mapped-trace",
+    "arm-jit-video-readback",
+    "arm-jit-memory-observation",
+    "arm-jit-protection-observation"
+  ],
+  "archive": "prebuiltefi.zip",
+  "normal_startup": "NOT_READY",
+  "physical_desktop_verified": false
+}
