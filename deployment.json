@@ -1,0 +1,165 @@
+{
+  "schema": "nextcore.public-site-build.v1",
+  "date": "2026-09-19",
+  "documentation_revision": "fee306952c6072bc5c642ff6b8e9acb4c42c3b2c",
+  "documentation_dirty": false,
+  "prebuilt": {
+    "schema": 1,
+    "source_repository": "https://github.com/26x86/26x86.git",
+    "source_commit": "3d3a434dfc9f84dcc1c34a2257f8cf7ceaafd99c",
+    "source_role": "private-assembly",
+    "public_sources": {
+      "nextcore-apls": {
+        "repository": "https://github.com/26x86/Nextcore-APLS.git",
+        "revision": "9b6ccaa421f668fdb212ccd14969002f6196a18f",
+        "path": "nextcore/crates/nextcore-apls"
+      },
+      "nextcore-core": {
+        "repository": "https://github.com/26x86/Nextcore-Core.git",
+        "revision": "4ae6e9aff31be93cf570b56975b711902f3fb7e7",
+        "path": "nextcore/crates/nextcore-core"
+      },
+      "nextcore-efi": {
+        "repository": "https://github.com/26x86/Nextcore-EFI.git",
+        "revision": "df2c15b8c83664042c33daa274f550158308a752",
+        "path": "nextcore/crates/nextcore-efi"
+      },
+      "nextcore-gpu": {
+        "repository": "https://github.com/26x86/Nextcore-GPU.git",
+        "revision": "eaab9fcfded3a8ee298453397790f13edace5694",
+        "path": "nextcore/crates/nextcore-gpu"
+      },
+      "nextcore-hal": {
+        "repository": "https://github.com/26x86/Nextcore-HAL.git",
+        "revision": "9c1cd8dfff33478e32668c5cd181dd094ec2881b",
+        "path": "nextcore/crates/nextcore-hal"
+      },
+      "nextcore-ise": {
+        "repository": "https://github.com/26x86/Nextcore-ISE.git",
+        "revision": "778473fd9c43d7ba3a4721852f838be996fed45d",
+        "path": "nextcore/crates/nextcore-ise"
+      },
+      "nextcore-tool": {
+        "repository": "https://github.com/26x86/Nextcore-Tool.git",
+        "revision": "9e6222a69d2f62490139c477d6e217a28e3af323",
+        "path": "nextcore/crates/nextcore-tool"
+      }
+    },
+    "primary_efi_source": {
+      "module": "nextcore-efi",
+      "repository": "https://github.com/26x86/Nextcore-EFI.git",
+      "revision": "df2c15b8c83664042c33daa274f550158308a752",
+      "path": "nextcore/crates/nextcore-efi"
+    },
+    "sha256": "38b575d9abf39e0f2b03679fb40e067ac2598086fb54ea489547f0b18510c038",
+    "size": 256956,
+    "normal_startup": "NOT_READY",
+    "physical_desktop_verified": false
+  },
+  "files": {
+    "404.html": {
+      "bytes": 18318,
+      "sha256": "76ec5c5ab264fb5487b9b4cea4f1804dc86e2ad4be4fedca84d47d009dfa60a7"
+    },
+    "assets/images/nextcore-brand-lockup-dark.png": {
+      "bytes": 95214,
+      "sha256": "df0c92d1e2532c7049b5ac6a9b5651c5af8aa5c572456461b710b823b2f4c879"
+    },
+    "assets/images/nextcore-brand-lockup.png": {
+      "bytes": 124792,
+      "sha256": "e807c8de175f723ccdcd97705bac6503b1edb15773c17765652e803ae125e5b0"
+    },
+    "assets/images/nextcore-favicon.png": {
+      "bytes": 2284,
+      "sha256": "71e7ed4938bfab2794212e446cf874b9b78a05aae29d2b93a31704a4b6d2514f"
+    },
+    "assets/images/nextcore-header-logo-light.png": {
+      "bytes": 36352,
+      "sha256": "f4ed3499cba946f1b05b7f9c99f929b3ff2a46b2ba219278842c99c5307b863d"
+    },
+    "assets/images/nextcore-header-logo.png": {
+      "bytes": 30709,
+      "sha256": "63abade05b0b9b71923d10dad2226a605100a86d44452be1529a8bf3f16521e9"
+    },
+    "assets/javascripts/bundle.d7400e89.min.js": {
+      "bytes": 114286,
+      "sha256": "f288ab99e197c406766aea4581ba6e902d7d0e28c013bdd3cd3fab6cc77fb7c8"
+    },
+    "assets/javascripts/portal.js": {
+      "bytes": 6908,
+      "sha256": "6140e723d37c7eaf771a63448fe442635ab940529510601b1f2fdc980b6facb6"
+    },
+    "assets/javascripts/workers/search.2c215733.min.js": {
+      "bytes": 39481,
+      "sha256": "cfb35333fafd6d2eb148eba21452849fb7fbde32fdfbf986836573f963106188"
+    },
+    "assets/licenses/website.txt": {
+      "bytes": 71333,
+      "sha256": "7d780cec69e2864b7b99b6fd970c3602dd550060809e290e6cfcf97ce8df5056"
+    },
+    "assets/stylesheets/extra.css": {
+      "bytes": 15669,
+      "sha256": "e1d80d6afd187b35b2f2ea08c5cad640fca69b7a86d1d411954c55c65fac5f7b"
+    },
+    "assets/stylesheets/main.ec1eaa64.min.css": {
+      "bytes": 139846,
+      "sha256": "ec1eaa640ab3790ea234d5a09da26015eb070222da8185a1e532d99cb022d68d"
+    },
+    "assets/stylesheets/palette.ab4e12ef.min.css": {
+      "bytes": 12641,
+      "sha256": "ab4e12ef511f9c36de818455892c5c57cc3f98a8c86c36fa609601a88a720da2"
+    },
+    "compatibility/index.html": {
+      "bytes": 28419,
+      "sha256": "1dd2c3de8919dfc152618b69a380a5c91b70304ca37cb326251d60e5b078a0f1"
+    },
+    "data/downloads.json": {
+      "bytes": 2852,
+      "sha256": "76378b41915d9e90ab731e61a0993200883407b019ed53853166751a9f71b5d7"
+    },
+    "data/prebuilt.json": {
+      "bytes": 2177,
+      "sha256": "ced5a6490c724ef4346f9bb7d52b3770e18b89c72d9392660ab76b400c240e9c"
+    },
+    "data/progress.json": {
+      "bytes": 6633,
+      "sha256": "fd18b28309b8e2313dde91b5e9f3828c88449c60997807d85ea6060aa8f882ff"
+    },
+    "downloads/index.html": {
+      "bytes": 32069,
+      "sha256": "99871d9b8f52aedb6389ee8b682ab41952cd96dc265e0e32efd63fc7f7f2d29a"
+    },
+    "index.html": {
+      "bytes": 27756,
+      "sha256": "b5e7950532cf5122467f3f8244de58eadbeab461cf49227d21c7d803ddc76787"
+    },
+    "library/index.html": {
+      "bytes": 25454,
+      "sha256": "e037c2615aa885d4054d7f977243ffb7fc9be63b2a285a70858eda76ffef707a"
+    },
+    "prebuiltefi.json": {
+      "bytes": 2017,
+      "sha256": "3a39c72587c212c79144be68d93c58483d67283194f33f86f4c51631d1c7aceb"
+    },
+    "prebuiltefi.zip": {
+      "bytes": 256956,
+      "sha256": "38b575d9abf39e0f2b03679fb40e067ac2598086fb54ea489547f0b18510c038"
+    },
+    "progress/index.html": {
+      "bytes": 35117,
+      "sha256": "f5fa938eb23a92f72df7612f7be06be1bde9888d7ed497bc9bb2d7b1b579080f"
+    },
+    "search/search_index.json": {
+      "bytes": 22923,
+      "sha256": "06d1a136e6af306f77ff2ed457e77433538ffe896d5820cf59d13797817dcf4e"
+    },
+    "sitemap.xml": {
+      "bytes": 675,
+      "sha256": "57a6510d259a1ad2df13a65ee5899ff2d12830c56c7e3c8f37970fcdbc0278a5"
+    },
+    "sitemap.xml.gz": {
+      "bytes": 226,
+      "sha256": "3742f072c5fc41f5d58e8dc982432e88e91ddeb2427ffaf9ca74ac89bb7973b7"
+    }
+  }
+}

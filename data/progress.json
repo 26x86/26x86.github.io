@@ -1,0 +1,116 @@
+{
+  "schema": "nextcore.public-progress.v1",
+  "updated_at": "2026-09-19",
+  "macos_boot_verified": false,
+  "physical_desktop_verified": false,
+  "metal_verified": false,
+  "installation_verified": false,
+  "recovery_verified": false,
+  "dfu_verified": false,
+  "real_hardware_qualified": false,
+  "headline": "Three deliverables. Separate acceptance gates.",
+  "boundary": {
+    "label": "Early firmware only. Product acceptance remains unverified.",
+    "detail": "The latest real-media boot stops during firmware initialization. Metal clients cross-build; utility planning and read-only inspection run in an internal OVMF research profile. No verified macOS 27 installation, working Metal driver or qualified real Intel Mac is available.",
+    "evidence_url": "progress/#acceptance"
+  },
+  "milestones": [
+    {
+      "id": "firmware",
+      "title": "Reach early firmware",
+      "status": "partial",
+      "summary": "Real macOS 27 media reaches an early firmware stage, then stops during initialization. The current real-media result is firmware-stage execution only.",
+      "observed": "Early firmware execution has been observed. This does not establish macOS kernel or userspace startup.",
+      "next": "Resolve the initialization failure and demonstrate a repeatable transition to the target macOS kernel.",
+      "acceptance": "macOS boot remains unverified.",
+      "evidence_url": "progress/#firmware"
+    },
+    {
+      "id": "macos",
+      "title": "Start macOS and reach a desktop",
+      "status": "unverified",
+      "summary": "No verified macOS 27 kernel-to-userspace boot, installed-system reboot or interactive desktop on a real Intel Mac is available.",
+      "observed": "Earlier experiments and authored tests cover individual components. They do not satisfy the current macOS 27 acceptance target.",
+      "next": "Verify the target OS version, kernel and userspace in one boot, followed by installation, reboot and visible interaction on identified real hardware.",
+      "acceptance": "Boot and physical desktop acceptance are false.",
+      "evidence_url": "progress/#macos"
+    },
+    {
+      "id": "metal",
+      "title": "Run Metal work in the guest",
+      "status": "build-only",
+      "summary": "Metal test clients cross-build successfully. Those clients are prerequisites for testing; they are not a working graphics driver.",
+      "observed": "Client builds and contract checks exist. A guest-visible Metal provider connected to a functioning driver has not been demonstrated.",
+      "next": "Create an actual guest Metal device and command queue, submit work, observe completion and verify rendered or computed results.",
+      "acceptance": "Metal acceptance is false. No performance target is required.",
+      "evidence_url": "progress/#metal"
+    },
+    {
+      "id": "planning",
+      "title": "Inspect a disk and review a plan",
+      "status": "research-tested",
+      "summary": "The internal utility exercises explicit target selection, planning and read-only GPT inspection under OVMF with 512-byte and 4096-byte sectors.",
+      "observed": "Read-only firmware checks and 36 EFI core tests cover this increment. Planning review, cancellation and inspection do not install anything.",
+      "next": "Connect the reviewed plan to independently verified firmware operations while preserving exact target identity and unrelated disks.",
+      "acceptance": "The public default release-policy preview is non-installing. Internal research results do not qualify its use on hardware.",
+      "evidence_url": "progress/#planning"
+    },
+    {
+      "id": "installation",
+      "title": "Apply and verify an installation",
+      "status": "host-tested",
+      "summary": "37 host tests pass for disposable disk-image creation and transaction handling. They exercise host tools, not physical disk installation from EFI.",
+      "observed": "Disposable-image tests cover bounded writes, verification and transaction recovery checks. EFI runtime apply and installed-system recovery remain unfinished.",
+      "next": "Implement exact-target confirmation, firmware writes, readback, interruption handling and applicable boot-entry setup; qualify Recovery and DFU separately where the hardware supports them.",
+      "acceptance": "Installation, Recovery and DFU acceptance are false.",
+      "evidence_url": "progress/#installation"
+    },
+    {
+      "id": "qualification",
+      "title": "Qualify real Intel Mac hardware",
+      "status": "unverified",
+      "summary": "No real Intel Mac has completed product qualification. There is no supported model list for this preview.",
+      "observed": "The exact downloadable preview ISO entered the default release-policy utility under QEMU/OVMF and refused the virtual machine without disk or NVRAM writes. A VM refusal test does not establish reliable real-Mac authentication.",
+      "next": "Validate admission and each claimed operation on identified real Intel Macs, including negative controls, installation, reboot and usable output.",
+      "acceptance": "Real-hardware qualification is false. Model strings alone are not proof of Apple hardware.",
+      "evidence_url": "progress/#qualification"
+    }
+  ],
+  "metrics": [
+    {
+      "value": "0",
+      "label": "Real Intel Macs qualified",
+      "detail": "No model is approved for installation or supported runtime use."
+    },
+    {
+      "value": "37",
+      "label": "Disposable-image host tests",
+      "detail": "Host-side transaction and writer checks; no physical installation claim."
+    },
+    {
+      "value": "36",
+      "label": "EFI core tests",
+      "detail": "Core behavior checks; no macOS, Metal or hardware acceptance claim."
+    }
+  ],
+  "latest": [
+    {
+      "date": "2026-09-19",
+      "title": "Installation utility: inspect and plan",
+      "summary": "Read-only GPT inspection and target planning are tested in OVMF for 512-byte and 4096-byte sectors. Physical installation remains unverified.",
+      "url": "progress/#planning"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Metal: client builds are a prerequisite",
+      "summary": "Actual test-client cross-builds pass. Guest device creation, command submission and correct output still require a working driver and execution evidence.",
+      "url": "progress/#metal"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Engineering preview publication target",
+      "summary": "The ISO and EFI use the default release-policy build, with channel preview. They contain no macOS payload and do not establish OS bootability.",
+      "url": "downloads/#engineering-preview"
+    }
+  ]
+}

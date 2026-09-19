@@ -1,0 +1,63 @@
+{
+  "schema": "nextcore.public-downloads.v1",
+  "updated_at": "2026-09-19",
+  "channel": "preview",
+  "release_tag": "engineering-preview-20260919",
+  "release_url": "https://github.com/26x86/NextCore/releases/tag/engineering-preview-20260919",
+  "build_profile": "release-policy",
+  "installing": false,
+  "contains_macos_payload": false,
+  "macos_boot_verified": false,
+  "physical_desktop_verified": false,
+  "metal_verified": false,
+  "installation_verified": false,
+  "recovery_verified": false,
+  "dfu_verified": false,
+  "real_hardware_qualified": false,
+  "assets": [
+    {
+      "name": "nextcore-installation-preview.iso",
+      "url": "https://github.com/26x86/NextCore/releases/download/engineering-preview-20260919/nextcore-installation-preview.iso",
+      "purpose": "Non-installing utility preview image; no macOS payload or OS bootability claim.",
+      "bytes": 17641472,
+      "sha256": "cd79ef7bfbc8fc3273064662472a37073b0dfa47ace119527b27e08413a4c62f"
+    },
+    {
+      "name": "nextcore-installation-preview.zip",
+      "url": "https://github.com/26x86/NextCore/releases/download/engineering-preview-20260919/nextcore-installation-preview.zip",
+      "purpose": "Utility EFI ZIP with embedded distribution notices and the default release policy.",
+      "bytes": 100489,
+      "sha256": "79136f5f22b1f816c1f1548cfcaa435c8e9dc1746c5c7ee5b02b955da711c40f"
+    },
+    {
+      "name": "MANIFEST.sha256",
+      "url": "https://github.com/26x86/NextCore/releases/download/engineering-preview-20260919/MANIFEST.sha256",
+      "purpose": "Published per-file checksums for this release.",
+      "bytes": 362,
+      "sha256": "9747cf37d216c79551f568ffed11ed1e66b074011db413e4b0ebabafd6ac3c61"
+    },
+    {
+      "name": "release.json",
+      "url": "https://github.com/26x86/NextCore/releases/download/engineering-preview-20260919/release.json",
+      "purpose": "Published artifact identity, build profile and validation limits.",
+      "bytes": 2177,
+      "sha256": "83aec27ea28421befaa3a7a681c14dfea7b914c795fc5b60edecb5e3b142af18"
+    },
+    {
+      "name": "LICENSES.txt",
+      "url": "https://github.com/26x86/NextCore/releases/download/engineering-preview-20260919/LICENSES.txt",
+      "purpose": "Project and included software license terms and acknowledgments.",
+      "bytes": 330236,
+      "sha256": "f84ddc58031edeaf82ef0c4b6e9d51923e5c65c8697ac53bdca814e5f47471dd"
+    }
+  ],
+  "legacy": {
+    "archive": "prebuiltefi.zip",
+    "url": "https://26x86.github.io/prebuiltefi.zip",
+    "sidecar_url": "https://26x86.github.io/prebuiltefi.json",
+    "source_commit": "3d3a434dfc9f84dcc1c34a2257f8cf7ceaafd99c",
+    "status": "archived-engineering-firmware",
+    "current_release_policy": false,
+    "note": "Separate mandatory legacy archive. It predates the current hardware policy and is not a current supported release."
+  }
+}
