@@ -1,7 +1,7 @@
 {
   "schema": "nextcore.public-site-build.v1",
   "date": "2026-09-19",
-  "documentation_revision": "fee306952c6072bc5c642ff6b8e9acb4c42c3b2c",
+  "documentation_revision": "3e8bbdaa7f177127eec90cc94f218e6d80361d14",
   "documentation_dirty": false,
   "prebuilt": {
     "schema": 1,
@@ -86,8 +86,8 @@
       "sha256": "f288ab99e197c406766aea4581ba6e902d7d0e28c013bdd3cd3fab6cc77fb7c8"
     },
     "assets/javascripts/portal.js": {
-      "bytes": 6908,
-      "sha256": "6140e723d37c7eaf771a63448fe442635ab940529510601b1f2fdc980b6facb6"
+      "bytes": 7369,
+      "sha256": "24bad770f6a04aec252ce55aea623752399206e6e00ca84aa77befff911dd62a"
     },
     "assets/javascripts/workers/search.2c215733.min.js": {
       "bytes": 39481,
@@ -155,11 +155,11 @@
     },
     "sitemap.xml": {
       "bytes": 675,
-      "sha256": "57a6510d259a1ad2df13a65ee5899ff2d12830c56c7e3c8f37970fcdbc0278a5"
+      "sha256": "d202c439c4913e14179c05fcc2fe176eb6899d11f7adc282d931515964e47240"
     },
     "sitemap.xml.gz": {
       "bytes": 226,
-      "sha256": "3742f072c5fc41f5d58e8dc982432e88e91ddeb2427ffaf9ca74ac89bb7973b7"
+      "sha256": "3eecbf0299742be37a08051ddbf01426eca098080462fb113b30a8079e6441ce"
     }
   }
 }
