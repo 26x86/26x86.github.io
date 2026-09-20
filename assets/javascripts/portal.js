@@ -57,8 +57,9 @@
     form.addEventListener("submit", event => event.preventDefault());
     form.addEventListener("input", () => { writeURL(form); render(); });
     form.addEventListener("reset", () => {
-      // The reset event occurs before the browser resets native controls.
-      queueMicrotask(() => { writeURL(form); render(); });
+      // A microtask can run before the native reset default action finishes.
+      // Read controls in the next task so results and URL match their values.
+      setTimeout(() => { writeURL(form); render(); }, 0);
     });
     const onPop = () => {
       if (!root.isConnected) { window.removeEventListener("popstate", onPop); return; }
@@ -79,7 +80,12 @@
         const location = doc.location.split("#")[0];
         if (!pages.has(location)) pages.set(location, {location, title: doc.title, text: ""});
         const page = pages.get(location);
-        page.text += " " + doc.title + " " + doc.text;
+        // MkDocs retains markup in indexed Markdown-in-HTML sections. Parse in
+        // an inert template that is never attached; render only its text.
+        const fragment = document.createElement("template");
+        fragment.innerHTML = String(doc.text || "");
+        fragment.content.querySelectorAll("script, style").forEach(node => node.remove());
+        page.text += " " + doc.title + " " + fragment.content.textContent;
         if (!doc.location.includes("#")) page.title = doc.title;
       }
       const rows = [...pages.values()].map(page => ({
